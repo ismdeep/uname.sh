@@ -24,7 +24,7 @@ if [ -f "${fversion}" ]; then
     esac
     ;;
   "Deepin")
-    echo "deepin$(< "${fversion}" grep 'MinorVersion=' | sed 's/MinorVersion=//g')"
+    echo -n "deepin$(< "${fversion}" grep 'MinorVersion=' | sed 's/MinorVersion=//g')"
     ;;
   *)
     echo -n "unknown"
@@ -38,4 +38,4 @@ if [ -f "${frelease}" ]; then
   exit 0
 fi
 
-echo "unknown"
+echo -n "unknown"
