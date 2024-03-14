@@ -23,6 +23,9 @@ if [ -f "${fversion}" ]; then
       ;;
     esac
     ;;
+  "Deepin")
+    echo "deepin$(< "${fversion}" grep 'MinorVersion=' | sed 's/MinorVersion=//g')"
+    ;;
   *)
     echo -n "unknown"
     ;;

@@ -19,13 +19,20 @@ assert "debian9"
 assert "debian10"
 assert "debian11"
 assert "debian12"
+
 assert "centos7"
 assert "centos8"
+
 assert "ubuntu12.04"
 assert "ubuntu14.04"
 assert "ubuntu16.04"
 assert "ubuntu18.04"
 assert "ubuntu20.04"
 assert "ubuntu22.04"
+
+assert "deepin20.9"
+
 assert "uos-desktop-1050u3"
 assert "uos-server-1050e"
+
+echo "==================== ALL TESTS PASSED ===================="
