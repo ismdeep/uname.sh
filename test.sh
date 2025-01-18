@@ -33,6 +33,7 @@ assert "ubuntu22.04"
 assert "deepin20.9"
 
 assert "uos-desktop-1050u3"
+assert "uos-desktop-1070u1"
 assert "uos-server-1050e"
 
 echo "==================== ALL TESTS PASSED ===================="

@@ -23,6 +23,17 @@ if [ -f "${fversion}" ]; then
       ;;
     esac
     ;;
+  "UOS Desktop")
+    case $(< "${fversion}" grep 'OsBuild=' | sed 's/OsBuild=//g') in
+    # uos-desktop-1050u3
+    "11018.101.100")
+      echo -n "uos-desktop-$(< "${fversion}" grep 'MinorVersion=' | sed 's/MinorVersion=//g')u1"
+      ;;
+    *)
+      echo -n "uos-desktop-$(< "${fversion}" grep 'MinorVersion=' | sed 's/MinorVersion=//g')"
+      ;;
+    esac
+    ;;
   "Deepin")
     echo -n "deepin$(< "${fversion}" grep 'MinorVersion=' | sed 's/MinorVersion=//g')"
     ;;
