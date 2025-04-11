@@ -1,0 +1,9 @@
+PRETTY_NAME="UOS Server 20"
+NAME="UOS Server 20"
+VERSION_ID="20"
+VERSION="20"
+ID=uos
+HOME_URL="https://www.chinauos.com/"
+BUG_REPORT_URL="https://bbs.chinauos.com/"
+VERSION_CODENAME=fuyu
+PLATFORM_ID="platform:uel20"

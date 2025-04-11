@@ -12,6 +12,9 @@ if [ -f "${fversion}" ]; then
   "UnionTech OS Server")
     echo -n "uos-server-$(< "${fversion}" grep 'MinorVersion=' | sed 's/MinorVersion=//g')$(< "${fversion}" grep 'EditionName=' | sed 's/EditionName=//g')"
     ;;
+  "UOS Server")
+    echo -n "uos-server-$(< "${fversion}" grep 'MinorVersion=' | sed 's/MinorVersion=//g')$(< "${fversion}" grep 'EditionName=' | sed 's/EditionName=//g')"
+    ;;
   "UnionTech OS Desktop")
     case $(< "${fversion}" grep 'OsBuild=' | sed 's/OsBuild=//g') in
     # uos-desktop-1050u3
